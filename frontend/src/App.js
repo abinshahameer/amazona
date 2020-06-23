@@ -44,7 +44,7 @@ function App() {
               <li>
                 <div className="product">
                   {
-                    data.map
+                   
                   }
                   <img className="product-image" src="/images/d1.jpg" alt="product" />
                   <div className="product-name">
