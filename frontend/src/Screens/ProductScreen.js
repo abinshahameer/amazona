@@ -3,7 +3,7 @@ import data from '../data';
 import { Link } from 'react-router-dom';
 function ProductScreen(props){
     const product=data.products.find(x=>x._id===props.match.params.id);
-    return 
+    return ( 
     <div> 
     <div className="back-to-result">
         <Link to="/">Back to result</Link>
@@ -18,14 +18,14 @@ function ProductScreen(props){
                 <li>
                   <h4>{product.name}</h4>
                 </li>
-                <li>
+                 {/* <li>
                   <a href="#reviews">
                     <Rating
                       value={product.rating}
                       text={product.numReviews + ' reviews'}
-                    />
+                    /> 
                   </a>
-                </li>
+                </li>  */}
                 <li>
                   Price: <b>${product.price}</b>
                 </li>
@@ -58,5 +58,6 @@ function ProductScreen(props){
 
     </div>
     </div>
+    )
 }
 export default ProductScreen;
