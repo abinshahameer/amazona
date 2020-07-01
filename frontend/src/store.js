@@ -4,5 +4,5 @@ const initialState={};
 const reducer=combineReducers({
     productList: productListReducer,
 })
-const store=createStore(reducer,initialState,compose(applyMiddleware(thunnk)));
+const store=createStore(reducer,initialState,compose(applyMiddleware(thunk)));
 export default store;
